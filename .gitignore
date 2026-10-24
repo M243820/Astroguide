@@ -10,11 +10,13 @@ venv/
 env/
 .venv/
 
-# Session recordings and local runtime logs (videos exceed GitHub 100MB file limit)
+# Session recordings and local runtime logs (large runtime videos ignored)
 outputs/videos/*
 !outputs/videos/.gitkeep
+!outputs/videos/sample_demo.mp4
 outputs/logs/*
 !outputs/logs/.gitkeep
+!outputs/logs/sample_run_log.jsonl
 outputs/logs/*.pid
 
 # Training run artifacts
