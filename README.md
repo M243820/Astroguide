@@ -1,4 +1,4 @@
-﻿# 🛰️ AstroGuide
+﻿# AstroGuide
 
 **Real-Time Computer Vision Telemetry & Autonomous Procedure Verification System**
 
@@ -13,7 +13,7 @@ AstroGuide is an offline, full-stack computer vision monitoring system designed 
 
 ---
 
-## 🌟 Key Highlights
+##  Key Highlights
 
 - **Edge-First & Fully Offline:** Zero cloud or external API dependencies. All inference, video recording, and state validation run strictly locally on device.
 - **Embedded Web Video Streaming:** Live 30 FPS annotated vision stream delivered directly to the browser via a dedicated **HTTP MJPEG multipart server (port 5005)**.
@@ -24,7 +24,7 @@ AstroGuide is an offline, full-stack computer vision monitoring system designed 
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 `
                       +---------------------------------------+
@@ -77,7 +77,7 @@ AstroGuide is an offline, full-stack computer vision monitoring system designed 
 
 ---
 
-## 💻 Web & Frontend Engineering Highlights
+## Web & Frontend Engineering Highlights
 
 While the backend processes computer vision and spatial geometry, the web frontend provides a mission-control command center built with advanced web engineering practices:
 
@@ -102,7 +102,7 @@ Rather than writing frames to disk and reading them back (which introduces disk 
 
 ---
 
-## 📋 The 4-Step Validated Sequence
+## The 4-Step Validated Sequence
 
 AstroGuide validates procedures in strict physical sequence:
 
@@ -113,11 +113,11 @@ AstroGuide validates procedures in strict physical sequence:
 | **S3** | **Insert Item** | item $\rightarrow$ container | **Early detection**: Decreasing distance delta ($\Delta d \ge 6\text{ px}$), directional velocity, and container proximity. Deep overlap not required. |
 | **S4** | **Close Lid** | lid $\rightarrow$ container | **Closed sooner**: Confirms in 1 frame as soon as lid and container overlap or touch. Triggers automatic session completion. |
 
-> **⚠️ Out-of-Order Rule:** If the lid is picked up before S3 (Insert Item) is completed, a low-latency voice alert (**"Wrong step"**) is immediately dispatched once.
+> **Out-of-Order Rule:** If the lid is picked up before S3 (Insert Item) is completed, a low-latency voice alert (**"Wrong step"**) is immediately dispatched once.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 `
 AstroGuide/
@@ -152,7 +152,7 @@ AstroGuide/
 
 ---
 
-## 🚀 Quickstart Guide
+## Quickstart Guide
 
 ### 1. Prerequisites
 - Python 3.10+
@@ -190,7 +190,7 @@ python main.py
 
 ---
 
-## 📊 Sample Outputs & Telemetry
+## Sample Outputs & Telemetry
 
 - **Live Demonstration Video:** Watch [outputs/videos/sample_demo.mp4](outputs/videos/sample_demo.mp4) to see real-time object bounding boxes, hand tracking centroids, proximity HUD, and sequential step transitions.
 - **Structured Telemetry Log:** View [outputs/logs/sample_run_log.jsonl](outputs/logs/sample_run_log.jsonl) for sample JSONL timestamped events:
@@ -204,7 +204,7 @@ python main.py
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 - **Frontend & UI:** Streamlit, HTML5, Custom CSS3 (Space Grotesk, DM Mono)
 - **Networking & Streaming:** HTTP MJPEG, multipart/x-mixed-replace, Python http.server, Threading
@@ -216,5 +216,5 @@ python main.py
 
 ---
 
-## 📄 License
+##  License
 This project is open-source under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
