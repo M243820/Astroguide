@@ -836,8 +836,7 @@ def render_live_telemetry():
         unsafe_allow_html=True,
     )
 
-    main_col = st.container()
-    side_col = st.container()
+    main_col, side_col = st.columns([1.75, 1.25])
 
     with main_col:
         if pipeline_live:
