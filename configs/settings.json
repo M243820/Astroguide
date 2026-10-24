@@ -1,0 +1,17 @@
+{
+  "relative_distance_factor": 0.6,
+  "confidence_threshold": 0.5,
+  "camera_index": 0,
+  "apply_exposure_fix": true,
+  "show_debug_overlay": true,
+  "video_fps": 20,
+  "video_resolution": [
+    1280,
+    720
+  ],
+  "default_min_duration_sec": 0.2,
+  "required_consecutive_frames": 2,
+  "min_approach_delta_px": 3.0,
+  "min_motion_speed_px": 1.0,
+  "skip_lookahead": 1
+}

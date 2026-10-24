@@ -1,0 +1,32 @@
+[
+  {
+    "step_id": 1,
+    "description": "Take the container",
+    "object": "container",
+    "action": "pick_up",
+    "min_duration": 0.8
+  },
+  {
+    "step_id": 2,
+    "description": "Take the item",
+    "object": "item",
+    "action": "pick_up_and_hold",
+    "min_duration": 0.8
+  },
+  {
+    "step_id": 3,
+    "description": "Insert the item into the container",
+    "object": "item",
+    "near_object": "container",
+    "action": "insert",
+    "min_duration": 0.8
+  },
+  {
+    "step_id": 4,
+    "description": "Close the lid onto the container",
+    "object": "lid",
+    "near_object": "container",
+    "action": "close",
+    "min_duration": 1.0
+  }
+]

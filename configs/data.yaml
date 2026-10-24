@@ -1,0 +1,13 @@
+train: ../data/annotations/train/images
+val: ../data/annotations/valid/images
+test: ../data/annotations/test/images
+
+nc: 3
+names: ['container', 'item', 'lid']
+
+roboflow:
+  workspace: krdhakulkar-gmail-com
+  project: astroguide
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/krdhakulkar-gmail-com/astroguide/dataset/2

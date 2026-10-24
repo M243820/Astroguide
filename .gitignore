@@ -1,0 +1,31 @@
+﻿# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+*.cache
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Session recordings and local runtime logs (videos exceed GitHub 100MB file limit)
+outputs/videos/*
+!outputs/videos/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+outputs/logs/*.pid
+
+# Training run artifacts
+runs/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets & local env
+.env
+*.local
